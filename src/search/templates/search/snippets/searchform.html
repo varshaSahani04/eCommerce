@@ -1,0 +1,22 @@
+{% load static %}
+<form method='GET' action='{% url "search:query" %}' class="form my-2 my-lg-0 search-form">
+    <div class='input-group'>
+      <input class="form-control " type="search" placeholder="type"  name='q' aria-label="Search" value={{request.GET.q}}>
+      <span class='input-group-btn'>
+   
+ 
+      <button class="btn btn-outline-success" type="submit"> Search</button>
+      
+     
+      </span>
+      
+      </div>
+    </form>
+<!--<form method='GET' action="@v.py">
+      <div class='input-group'>
+      <input class="form-control " type="search" placeholder="type"  name='q' aria-label="Search" value={{request.GET.q}}>
+      <span class='input-group-icon'>
+         <button class="btn btn-outline success" type="submit"><img src="{% static 'img/speak.jpeg' %}" height=30 weight=30/>speak</button>
+      </span>
+      </div
+</form>-->
